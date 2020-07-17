@@ -9,3 +9,17 @@ const navigationOnScrollChange = () => {
 }
 
 navigationOnScrollChange()
+
+
+
+const playBtn = document.querySelector(".our_story-play")
+const popup = document.querySelector(".popup")
+const close = document.querySelector(".close-btn")
+
+playBtn.addEventListener("click",(e)=>{
+    popup.style.display = "flex";
+})
+
+close.addEventListener("click", (e) => {
+    popup.style.display = "none";
+})
