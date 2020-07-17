@@ -1,0 +1,138 @@
+/* general styles */
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange:#FFA567;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+body{
+    font-size: 1.4rem;
+    line-height: 1.4;    
+    color: #AEB2B4;
+}
+
+/* || utilities START */
+
+.main_btn{
+    background-color: var(--orange);
+    color: #fff;
+    padding: 1.5rem 4rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Mulish' ,sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 2.2rem;
+    margin-right: 5rem;
+    box-shadow: 0 5px 15px #f981698a;
+    transition: all 200ms ease;
+    display: inline-block;
+    border: 0;
+}
+
+.main_btn:hover,
+.main_btn:active,
+.main_btn:focus{
+    box-shadow: 0 5px 15px #f98169b4;
+    transform: translateY(-2px);
+    outline: none;
+}
+
+
+/* || utilities END */
+
+
+/* || Top navigation START */
+
+.navigation{
+    display: none;
+}
+
+/* || Top navigation END */
+
+/* || Header Section START */
+
+.header-section{
+    height: 100vh;
+    width: 100%;
+    background-image:
+    linear-gradient(
+      100deg, 
+      rgba(255,255,255,.9) 0%,
+      rgba(255,255,255,.9) 60%,
+      rgba(0,0,0,0) 60%
+    ),
+    url(../images/hero-heading.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-container{
+    position: absolute;
+    bottom: 15rem;
+    left: 10rem;
+    width: 45%; 
+}
+
+.hero-heading{
+    font-family: 'Mulish' ,sans-serif;
+    font-weight: 300;
+    color: #255A7E;
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.hero-sub-heading{
+    color: #0C3653;
+    font-size: 1.4rem;
+    font-family: 'Mulish' ,sans-serif;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.hero-btn-container{
+    margin-top: 2rem;
+}
+
+.download-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2.5rem;
+}
+
+.download_app{
+    width: 18rem;
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.download_app img{
+    width: 100%;
+}
+
+/* || Header Section END */
