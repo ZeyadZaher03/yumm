@@ -4,16 +4,24 @@
     <!-- general -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yumm</title>
+
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- vendors css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <!-- vendors javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
         integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
     <!-- javascript -->
     <script defer src="assets/js/script.js"></script>
+
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Yumm</title>
 </head>
 <body>
     <div class="navigation_container">
@@ -192,6 +200,51 @@
 
     <section class="popular-recipes">
         <h1 class="section_heading heading-big">Our Popular Recipes</h1>
+        <div class="popular-recipes_gallary">
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="assets/images/fruit.png" alt="fruit">
+                            <div class="splid_info">
+                                <h3>Chrink Top Brownies</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores explicabo odio
+                                    at odit dolorum recusandae qui sunt facere commodi eius cumque</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/images/eggs.png" alt="eggs">
+                            <div class="splid_info">
+                                <h3>Chrink Top Brownies</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores explicabo odio at odit dolorum recusandae qui sunt facere commodi eius cumque</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/images/fruit-1.png" alt="fruit">
+                            <div class="splid_info">
+                                <h3>Chrink Top Brownies</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores explicabo odio at odit dolorum recusandae qui sunt facere commodi eius cumque</p>
+                            </div>
+                        </li>
+                        
+                        <li class="splide__slide">
+                            <img src="assets/images/milk.png" alt="milk">
+                            <div class="splid_info">
+                                <h3>Chrink Top Brownies</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores explicabo odio at odit dolorum recusandae qui sunt facere commodi eius cumque</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/images/child-eating.png" alt="child">
+                            <div class="splid_info">
+                                <h3>Chrink Top Brownies</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores explicabo odio at odit dolorum recusandae qui sunt facere commodi eius cumque</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="newsletter">
@@ -226,9 +279,26 @@
             <p class="copyright">Copyright©Yumm LLC, 2019. All rights reserved</p>
         </div>
     </footer>
+    
     <div class="popup">
         <div class="close-btn"><i class="fas fa-times"></i></div>
         <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"></iframe>
     </div>
+    
+    <script>
+        new Splide('.splide', {
+            perPage: 4,
+            breakpoints: {
+                '640': {
+                    perPage: 2,
+                    gap : '1rem',
+                },
+                '480': {
+                    perPage: 1,
+                    gap : '1rem',
+                },
+            }
+        } ).mount();
+    </script>
 </body>
 </html> 

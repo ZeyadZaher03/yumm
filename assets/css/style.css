@@ -487,6 +487,7 @@ display: none;
     overflow: hidden;
     box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
     transition: all 200ms ease;
+    cursor: pointer;
 }
 
 .meal_item:hover,
@@ -699,31 +700,89 @@ display: none;
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.1);
 }
 
 .close-btn{
     position: fixed;
     right:4rem;
+    height: 5rem;
+    width: 5rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, .1);
     z-index: 9999999;
     top: 2rem;
     cursor: pointer;
 }
 
 .close-btn svg {
-    color: rgb(70, 70, 70);
+    color: #fca400;
     font-size: 3rem;
+    transition: all 500ms ease;
 }
 
 .close-btn:hover svg,
 .close-btn:active svg {
-    color: rgb(43, 43, 43);
-    font-size: 3rem;
+    transform: rotate(180deg);
 }
 
 .popup iframe {
     width: 80%;
-    border: 10px solid #fff;
+    border: 10px solid #f9f9f9;
     border-radius: 5px;
     height: 80%;
+}
+
+.popular-recipes_gallary{
+    margin-top:5rem ;
+}
+
+.splide__slide{
+    width: 30rem;
+    height: 30rem;
+    background: rgba(0, 0, 0, .1);
+    margin-right: 3rem;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+}
+
+.splide__slide img{
+    height: 100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.splide__arrow {
+    width: 8rem;
+    border-radius: 5px;
+    background: var(--orange);
+    opacity: 1;
+}
+
+.splide__arrow svg {
+    fill: #fff !important;
+}
+
+.splid_info{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+}
+
+.splid_info h3 {
+    color: #fff;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.splid_info p {
+    color: #dfdfdf;
+    font-family: "Mulish", sans-serif;
 }
