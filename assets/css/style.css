@@ -67,15 +67,14 @@ body{
 /* || Top navigation START */
 
 .navigation{
-    position: fixed;
     display: flex;
     width: 50%;
-    top: 3rem;
-    left: 10rem;
+    margin-top: 3rem;
+    margin-left: 10rem;
     z-index: 99;
-    font-family: 'Mulish',
-    sans-serif;
+    font-family: 'Mulish', sans-serif;
     flex-wrap: wrap;
+    transition: all 500ms ease;
 }
 
 .navigation > *{
@@ -89,6 +88,8 @@ body{
 
 .navigation_logo-container {
     margin-right: 4rem;
+    animation-name: test;
+    animation-duration: 4s;
 }
 
 .navigation_van{
@@ -120,6 +121,7 @@ body{
 
 .navigation_link--active{
     color:#00D9CC;
+    
 }
 
 .navigation_link--active:active,
@@ -127,7 +129,63 @@ body{
     color:#00beb2;
 }
 
+.navigationScroll{
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: .5rem 5rem;    
+    width: 100% !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation_container{
+    width: 100%;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    z-index: 99;
+    transition: all 200ms ease;
+}
+
+.navigation_container--active{
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+.navigationScroll .navigation_links{
+    width: 40%;
+}
+
+.navigationScroll .navigation_links-container {
+    margin: 0;
+}
+
+.navigationScroll .navigation_logo-container {
+    width: 10rem;
+}
+
+.navigationScroll .navigation_logo-container img {
+    width: 100%;
+}
+
+.navigationScroll > *{
+    flex-basis: auto;
+}
+
 /* || Top navigation END */
+@keyframes example {
+    0% {
+        opacity: 1;
+    }
+    50% {
+         opacity: 0;
+    }
+
+    100% {
+        display: none;
+    }
+}
 
 /* || Header Section START */
 
