@@ -786,3 +786,307 @@ display: none;
     color: #dfdfdf;
     font-family: "Mulish", sans-serif;
 }
+
+@media only screen and (max-width:1050px){
+    /* || navigation */
+    .navigation{
+        width: 70%;
+    }
+
+    .navigation_info{
+        width: 100%;
+    }
+    
+    .navigation_link{
+        font-size: 2.5rem;
+    }
+    
+    .navigationScroll{
+        padding: 2rem 5rem;
+    }
+    
+    .navigationScroll .navigation_links {
+        width: 100% !important;
+        margin-top: 1.5rem;
+    }
+    
+    /* || header */
+    .header-section {
+        background-image: 
+            linear-gradient( 
+                96deg,
+                rgba(255,255,255,.9) 0%, 
+                rgba(255,255,255,.9) 85%,
+                rgba(0,0,0,0) 85% ),
+                url(../images/hero-heading.png);
+    }
+    .hero-container{
+        width: 80%;
+        left: 5rem;
+        bottom: 30rem;
+    }
+
+    .hero-sub-heading{
+        font-size: 1.7rem;
+    }
+
+    .download-container {
+        transform: none;
+        left: 5rem;
+        bottom: 19rem;
+    }
+
+
+    /* || About us  */
+    .about_us-image {
+        width: 33rem;
+        height: 50rem;
+    }
+
+
+    .img-food{
+        width: 17rem;
+        height: 12rem;
+    }
+    
+    .img-child{
+        width: 21rem;
+        height: 15rem;
+    }
+
+    .img-egg{
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .img-milk{
+        width: 17rem;
+        height: 18rem;
+    }
+
+    .about_us-section{
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 2rem;
+    }
+    .about_us-images-col{
+        flex:1;
+        margin: 0;
+    }
+    .img-food {
+        width: 80%;
+        height: 12rem;
+    }
+
+    .img-child {
+        width: 100%;
+        height: 15rem;
+    }
+
+    .img-egg {
+        width: 80%;
+        height: 15rem;
+    }
+
+    .img-milk {
+        width: 100%;
+        height: 18rem;
+    }
+
+    /* || our story  */
+    .our_story{
+        width: 100%;
+    }
+
+
+
+    .meals_container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .newsletter_container{
+        width: 100%;
+    }
+
+    .dotes {
+        width: 25%;
+    }
+    
+    #dotes-1{
+        top: -15%;
+        left: -5%;
+    }
+
+    #dotes-2 {
+        bottom: -15%;
+        right: -5%;
+    }
+
+    .splide__slide{
+        height: 25rem;
+    }
+
+    /* || footer */
+
+    .footer_container{
+        width: 70%;
+    }
+
+    .plate_footer{
+        right: -20rem;
+        bottom: -21rem;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .section{
+        padding :  5rem;
+    }
+
+    .heading-big{
+        font-size: 3rem;
+    }
+
+
+    /* || navigation */
+    .navigation{
+        margin-left: 1.5rem;
+        width: 90%;
+    }
+
+    .navigation_logo{
+        width :10rem
+    }
+
+    .navigation_logo-container {
+        margin-right: 0.5rem;
+    }
+    
+    .navigation_van{
+        margin-right: .5rem;
+        width: 2.5rem;
+    }
+
+    .navigationScroll .navigation_van {
+        /* display: none; */
+    }
+    .navigation_info{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navigation_info p{
+        font-size: 1.2rem;
+        color: rgb(41, 41, 41);
+    }
+
+    .navigationScroll{
+        padding: 2rem; 
+        margin: 0;
+    }
+
+    .navigation_link{
+        font-size: 1.5rem;
+    }
+
+    .main_btn{
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+        margin-right: 2rem;
+    }
+
+    /* || header */
+    .hero-container{
+        bottom: 20rem;
+        left: 3rem;
+    }
+
+    .hero-heading{
+        font-size: 5.5rem;
+    }
+    
+    .download-container{
+        left: 3rem;
+        bottom: 7rem;
+    }
+
+    /* || about us */
+    .about_us-section{
+        grid-template-columns: 1fr;
+        grid-row-gap: 5rem;
+        /* align-content: center; */
+        justify-items: center;
+
+    }
+
+    .about_us-image{
+        width: 31rem;
+        height: 33rem;
+    }
+
+    .section_subheading{
+        width: 100%;
+    }
+
+    .about_us-content{
+        text-align: center;
+    }
+
+    #baby-image{
+        order: 1;
+    }
+
+    /* || our story */
+    .our_story{
+        padding: 2rem;
+    }
+
+    .our_story-heading{
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .our_story-text{
+        width: 100%;
+    }
+
+
+    /* || newsletter */
+
+    .newsletter {
+        margin: 10rem 2rem;
+        margin-bottom:3rem;
+    }
+
+    .newsletter_input{
+        font-size: 1.3rem;
+        padding: 1.2rem;
+    }
+    
+    .newsletter_input-run{
+        font-size: 1.3rem;
+        padding: 1.2rem;
+    }
+
+    /* || meals  */
+
+    .meals_container{
+        grid-template-columns:1fr
+    }
+
+    /* || footer */
+
+    .footer_section{
+        padding-top: 5rem;
+    }
+
+    .footer_container{
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .plate_footer{
+        right: -10rem;
+        bottom: -7rem;
+        z-index: -1;
+    }
+}
