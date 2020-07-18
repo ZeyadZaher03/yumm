@@ -978,7 +978,9 @@ display: none;
         font-size: 1.2rem;
         color: rgb(41, 41, 41);
     }
-
+    .popular-recipes_gallary{
+        margin: 5rem 4rem 0 4rem;
+    }
     .navigationScroll{
         padding: 2rem; 
         margin: 0;
